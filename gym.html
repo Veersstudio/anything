@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veer's Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body,html{
+           font-family: 'Baloo Bhai 2', cursive;
+            color:white;
+            /* width:12%; */
+            /* margin:0px 15px ;
+            padding:0px 100px; */
+            /* background:url('/abs.jpg'); */
+            /* background-image:url('/abs.jpg'); */
+            /* border: 2px solid red; */
+            /* background-size:100vh; */
+            /* background-position-x: 100rem;
+            background-position-y: 100rem; */
+             /* background-position-x: 800px;
+            background-size:0vmax */
+            /* background-repeat: no-repeat ; 
+            height:100vh;
+            background-position: center; */
+            /* width: 700px;
+            height: 700px; */
+            /* margin-top: auto;
+            background-size: cover; */
+            /* height: 100%;
+            margin: 0; */
+            
+        }
+        header::before{
+            background: url('/abs.jpg')no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-top: 25%;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* opacity: 0.5; */
+        }
+        .left{
+            display:inline-block;
+            /* border:2px solid red; */
+            position:absolute;
+            left:30px;
+            top:20px;
+        }
+        .mid{      
+            /* margin:auto; */
+            /* border:2px solid rgb(18, 243, 18); */
+            /* + */
+            width:45rem ;
+            margin:20px auto;
+        }
+        .right{
+            /* float:right; */
+            /* border:2px solid red; */
+            position:absolute;
+            right:6rem;
+            top:2rem;
+        }
+        
+        .navbar{
+            display:inline-block;
+            
+        }
+        .navbar li{
+            display:inline-block;
+            /* list-style: none; */
+            font-size: 25px;
+        }
+        .navbar li a{
+            color:white;
+            text-decoration: none;
+            padding:34px 21px;
+            
+        }
+        .navbar li a:hover{
+            text-decoration: underline;
+            color:grey;
+            
+        }
+        .left img{
+            padding: 11px 28px;
+            height:48px;
+            width:62px;
+            filter:invert(100%)
+        }
+        .Name{
+            color:white;
+            text-align: center;
+            line-height: 19px;
+            font-size: 26px;
+        }
+        /* .active:hover{
+            color:aqua;
+        } */
+        .btn{
+            margin:0px 9px;
+            color:white;
+            background-color: black;
+            padding: 4px 14px;
+            border:2px solid grey;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .btn:hover{
+            color:bisque;
+        }
+        .container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border:2px solid white;
+            margin-top: 11rem ;
+            margin-left: 63rem;
+            width:38rem;
+            border-radius: 28px ;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width:500px;
+            border:2px solid black;
+            margin:3px auto;
+            font-size: 25px;
+            border-radius: 15px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .container h1{
+            text-align: center;
+
+        }
+        .container button{
+            display: block;
+            width:82%;
+            margin:23px auto;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="left">
+           <img src="/d2.png" alt="">
+           <div class="Name">Veer Fitness</div>
+        </div>
+        <div class="mid">
+           <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+           </ul>
+
+        </div>
+        <div class="right">
+            <a href="https://chat.whatsapp.com/HLBb0YNBCwODIAyTd0Mgy2"><button class="btn">Call Me</button></a>
+            <button class="btn">Mail Me</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Hooghly now</h1>
+        <form action="mailto:baggagreat5@gmail.com">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+                <br>
+                <input type="text" name="" placeholder="Enter your weight">
+                <br>
+                <input type="text" name="" placeholder="Weight to achieve">
+            </div>
+            <button class="btn">Submit</button>
+            
+        </form>
+    
+</div>
+</body>
+</html>
